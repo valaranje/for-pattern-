@@ -20,7 +20,23 @@
 7
 """
 
-n = int(input())
 
 # TODO: читайте числа и отслеживайте два максимума; выведите второй
 
+n = int(input())
+
+first = int(input())
+second = int(input())
+
+if second > first:
+    first, second = second, first
+
+for _ in range(n - 2):
+    x = int(input())
+    if x > first:
+        second = first
+        first = x
+    elif x > second:
+        second = x
+
+print(second)
