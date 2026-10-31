@@ -18,3 +18,11 @@ True
 
 # TODO: проверьте все три правила (пригодятся count и find)
 
+s = input()
+at = s.find("@")
+ok = (
+    s.count("@") == 1
+    and 0 < at < len(s) - 1
+    and "." in s[at + 1:]
+)
+print(ok)

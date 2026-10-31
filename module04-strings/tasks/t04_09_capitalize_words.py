@@ -17,3 +17,5 @@
 
 # TODO: split → capitalize каждого слова → join
 
+s = input()
+print(" ".join(w.capitalize() for w in s.split()))

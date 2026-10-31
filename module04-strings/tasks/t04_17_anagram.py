@@ -21,3 +21,6 @@ sorted("ба") даёт ['а', 'б'] — список букв по порядк
 
 # TODO: нормализуйте обе строки и сравните отсортированные буквы
 
+a = input().lower().replace(" ", "")
+b = input().lower().replace(" ", "")
+print(sorted(a) == sorted(b))

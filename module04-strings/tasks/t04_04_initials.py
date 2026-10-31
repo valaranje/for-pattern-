@@ -13,4 +13,6 @@
 """
 
 # TODO: разберите строку на слова и соберите инициалы
-
+s = input()
+words = s.split()
+print("".join(w[0] + "." for w in words))
